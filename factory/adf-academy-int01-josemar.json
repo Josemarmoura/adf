@@ -1,0 +1,9 @@
+{
+	"name": "adf-academy-int01-josemar",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c0a7dea3-47d5-44d9-b037-f58a7feed0fc",
+		"tenantId": "cf36141c-ddd7-45a7-b073-111f66d0b30c"
+	}
+}
