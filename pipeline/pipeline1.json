@@ -326,7 +326,7 @@
 								{
 									"activity": "CD_JASON_PARQUET",
 									"dependencyConditions": [
-										"Succeeded"
+										"Completed"
 									]
 								}
 							],
@@ -416,6 +416,29 @@
 							"linkedServiceName": {
 								"referenceName": "LS_AzSql",
 								"type": "LinkedServiceReference"
+							}
+						},
+						{
+							"name": "MV_ERRO",
+							"type": "Copy",
+							"dependsOn": [
+								{
+									"activity": "CD_JASON_PARQUET",
+									"dependencyConditions": [
+										"Failed"
+									]
+								}
+							],
+							"policy": {
+								"timeout": "7.00:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"enableStaging": false
 							}
 						}
 					]
