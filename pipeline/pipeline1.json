@@ -176,7 +176,11 @@
 							"outputs": [
 								{
 									"referenceName": "DS_PARQUET",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"Container": "curated",
+										"Directory": "AdventureWorks/Customers/Processar/"
+									}
 								}
 							]
 						}
