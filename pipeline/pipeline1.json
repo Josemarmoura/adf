@@ -154,6 +154,16 @@
 				}
 			}
 		],
+		"parameters": {
+			"Schema": {
+				"type": "string",
+				"defaultValue": "SalesLT"
+			},
+			"Table": {
+				"type": "string",
+				"defaultValue": "Customer"
+			}
+		},
 		"folder": {
 			"name": "AdventureWorks"
 		},
