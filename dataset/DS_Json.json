@@ -18,8 +18,14 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "AdventureWorks/Customers/Processar",
-				"fileSystem": "containerraw"
+				"folderPath": {
+					"value": "@dataset().Directry",
+					"type": "Expression"
+				},
+				"fileSystem": {
+					"value": "@dataset().Container",
+					"type": "Expression"
+				}
 			}
 		},
 		"schema": {}

@@ -50,7 +50,17 @@
 				"outputs": [
 					{
 						"referenceName": "DS_Json",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"Container": {
+								"value": "@pipeline().parameters.Container",
+								"type": "Expression"
+							},
+							"Directry": {
+								"value": "@pipeline().parameters.Directory",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			},
@@ -76,7 +86,17 @@
 				"typeProperties": {
 					"dataset": {
 						"referenceName": "DS_Json",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"Container": {
+								"value": "@pipeline().parameters.Container",
+								"type": "Expression"
+							},
+							"Directry": {
+								"value": "@pipeline().parameters.Directory",
+								"type": "Expression"
+							}
+						}
 					},
 					"fieldList": [
 						"childItems"
@@ -172,6 +192,14 @@
 			"Table": {
 				"type": "string",
 				"defaultValue": "Customer"
+			},
+			"Container": {
+				"type": "string",
+				"defaultValue": "containerraw"
+			},
+			"Directory": {
+				"type": "string",
+				"defaultValue": "AdventureWorks/Customers/Processar"
 			}
 		},
 		"folder": {
