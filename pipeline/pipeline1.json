@@ -170,7 +170,17 @@
 							"inputs": [
 								{
 									"referenceName": "DS_Json",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"Container": {
+											"value": "@pipeline().parameters.Container",
+											"type": "Expression"
+										},
+										"Directry": {
+											"value": "@pipeline().parameters.Directory",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [
