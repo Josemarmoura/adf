@@ -10,8 +10,9 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "avanade/RH",
-				"fileSystem": "curated"
+				"fileName": "avanade2021-04-29.zip",
+				"folderPath": "HR",
+				"fileSystem": "arquivos"
 			}
 		}
 	}
