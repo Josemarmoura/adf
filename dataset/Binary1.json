@@ -14,7 +14,7 @@
 					"value": "@concat('avanade',formatDateTime(utcnow(),'yyyy-MM-dd'),'.zip')",
 					"type": "Expression"
 				},
-				"folderPath": "RH",
+				"folderPath": "HR",
 				"fileSystem": "arquivos"
 			},
 			"compression": {
