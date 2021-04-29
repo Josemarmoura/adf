@@ -46,7 +46,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Emp ID",
+									"name": "EmpID",
 									"physicalType": "UTF8"
 								}
 							},
