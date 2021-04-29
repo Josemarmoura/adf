@@ -42,7 +42,7 @@
 							{
 								"source": {
 									"name": "Emp ID",
-									"type": "Int16",
+									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
