@@ -103,6 +103,7 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
@@ -364,7 +365,7 @@
 									},
 									"DT_START": {
 										"value": {
-											"value": "@activity('CD_JASON_PARQUET').output.[0].start",
+											"value": "@activity('CD_JASON_PARQUET').output.executionDetails[0].start",
 											"type": "Expression"
 										},
 										"type": "DateTime"
@@ -399,7 +400,7 @@
 									},
 									"STATUS": {
 										"value": {
-											"value": "@activity('CD_JASON_PARQUET').output.[0].status",
+											"value": "@activity('CD_JASON_PARQUET').output.executionDetails[0].status",
 											"type": "Expression"
 										},
 										"type": "String"
