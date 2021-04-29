@@ -1,0 +1,26 @@
+{
+	"name": "Binary1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS_GEN2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@concat('avanade',formatDateTime(utcnow(),'yyyy-MM-dd'),'.zip')",
+					"type": "Expression"
+				},
+				"folderPath": "RH",
+				"fileSystem": "arquivos"
+			},
+			"compression": {
+				"type": "deflate",
+				"level": "Fastest"
+			}
+		}
+	}
+}
