@@ -190,7 +190,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"Container": {
-											"value": "test",
+											"value": "curated",
 											"type": "Expression"
 										},
 										"Directory": {
