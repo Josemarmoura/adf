@@ -190,10 +190,13 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"Container": {
-											"value": "@if(equals(1,1), 1, 0)",
+											"value": "curated",
 											"type": "Expression"
 										},
-										"Directory": "AdventureWorks/Customers/Processar/"
+										"Directory": {
+											"value": "AdventureWorks/Customers/Processar/",
+											"type": "Expression"
+										}
 									}
 								}
 							]
