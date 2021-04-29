@@ -1,0 +1,25 @@
+{
+	"name": "TRG_daily_07_schedule",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_GET_DATA_CUSTOMERS",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 10,
+				"startTime": "2021-04-29T20:45:00",
+				"endTime": "2021-04-30T18:44:00",
+				"timeZone": "E. South America Standard Time"
+			}
+		}
+	}
+}
