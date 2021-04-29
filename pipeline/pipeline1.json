@@ -439,8 +439,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "User Name",
-									"type": "String",
+									"name": "UserName",
 									"physicalType": "UTF8"
 								}
 							},
