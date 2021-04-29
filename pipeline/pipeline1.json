@@ -153,7 +153,7 @@
 							{
 								"source": {
 									"name": "Date of Birth",
-									"type": "String",
+									"type": "DateTime",
 									"physicalType": "String"
 								},
 								"sink": {
