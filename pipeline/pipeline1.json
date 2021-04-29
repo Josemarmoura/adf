@@ -474,7 +474,8 @@
 						"referenceName": "DS_PARQUET",
 						"type": "DatasetReference",
 						"parameters": {
-							"Container": "arquivos"
+							"Container": "arquivos",
+							"Directory": "HR"
 						}
 					}
 				]
