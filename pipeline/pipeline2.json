@@ -72,7 +72,7 @@
 								"body": {
 									"dataFactoryName": "@{pipeline().DataFactory}",
 									"pipelineName": "@{pipeline().Pipeline}",
-									"para": "@pipeline().parameters.receiver"
+									"para": "j.correia.de.melo@avanade.com"
 								}
 							}
 						}
