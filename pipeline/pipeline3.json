@@ -46,15 +46,24 @@
 							},
 							{
 								"source": {
-									"path": "$['menu']['items'][0]['id']"
+									"path": "['id']"
 								},
 								"sink": {
 									"name": "id",
 									"type": "String"
 								}
+							},
+							{
+								"source": {
+									"path": "$['menu']['items'][0]['id']"
+								},
+								"sink": {
+									"name": "Label",
+									"type": "String"
+								}
 							}
 						],
-						"collectionReference": "",
+						"collectionReference": "$['menu']['items']",
 						"mapComplexValuesToString": false
 					}
 				},
