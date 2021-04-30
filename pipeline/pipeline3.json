@@ -38,11 +38,17 @@
 							{
 								"source": {
 									"path": "$['menu']['header']"
+								},
+								"sink": {
+									"type": "String"
 								}
 							},
 							{
 								"source": {
 									"path": "$['menu']['items'][0]['id']"
+								},
+								"sink": {
+									"type": "String"
 								}
 							}
 						],
