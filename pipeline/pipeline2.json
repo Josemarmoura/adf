@@ -99,7 +99,11 @@
 										"deleteFilesAfterCompletion": false
 									},
 									"formatSettings": {
-										"type": "BinaryReadSettings"
+										"type": "BinaryReadSettings",
+										"compressionProperties": {
+											"type": "ZipDeflateReadSettings",
+											"preserveZipFileNameAsFolder": false
+										}
 									}
 								},
 								"sink": {
@@ -112,13 +116,13 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "Binary2",
+									"referenceName": "DS_ADLSGEN2_BINARY",
 									"type": "DatasetReference"
 								}
 							],
 							"outputs": [
 								{
-									"referenceName": "Binary2",
+									"referenceName": "DS_ADLSGEN2_BINARIO_D",
 									"type": "DatasetReference"
 								}
 							]
