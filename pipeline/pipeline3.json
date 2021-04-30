@@ -40,6 +40,7 @@
 									"path": "$['menu']['header']"
 								},
 								"sink": {
+									"name": "header",
 									"type": "String"
 								}
 							},
@@ -48,6 +49,7 @@
 									"path": "$['menu']['items'][0]['id']"
 								},
 								"sink": {
+									"name": "id",
 									"type": "String"
 								}
 							}
