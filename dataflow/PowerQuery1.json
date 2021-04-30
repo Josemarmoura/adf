@@ -1,0 +1,19 @@
+{
+	"name": "PowerQuery1",
+	"properties": {
+		"type": "WranglingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"name": "DS_ADLSGEN2_DELIMITED",
+					"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false) ~>  DS_ADLSGEN2_DELIMITED",
+					"dataset": {
+						"referenceName": "DS_ADLSGEN2_DELIMITED",
+						"type": "DatasetReference"
+					}
+				}
+			],
+			"sinks": []
+		}
+	}
+}
