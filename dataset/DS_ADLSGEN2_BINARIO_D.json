@@ -1,5 +1,5 @@
 {
-	"name": "Binary2",
+	"name": "DS_ADLSGEN2_BINARIO_D",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_ADLS_GEN2",
@@ -10,9 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "avanade2021-04-29.zip",
-				"folderPath": "HR",
-				"fileSystem": "arquivos"
+				"folderPath": "HR/SAIDA",
+				"fileSystem": "curated"
 			}
 		}
 	}
