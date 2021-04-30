@@ -1,0 +1,341 @@
+{
+	"name": "pipeline3",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy data1",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "RestSource",
+						"httpRequestTimeout": "00:01:40",
+						"requestInterval": "00.00:00:00.010",
+						"requestMethod": "GET"
+					},
+					"sink": {
+						"type": "AzureSqlSink"
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['login']"
+								},
+								"sink": {
+									"name": "login",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['id']"
+								},
+								"sink": {
+									"name": "id",
+									"type": "Int64"
+								}
+							},
+							{
+								"source": {
+									"path": "$['node_id']"
+								},
+								"sink": {
+									"name": "node_id",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['avatar_url']"
+								},
+								"sink": {
+									"name": "avatar_url",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['gravatar_id']"
+								},
+								"sink": {
+									"name": "gravatar_id",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['url']"
+								},
+								"sink": {
+									"name": "url",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['html_url']"
+								},
+								"sink": {
+									"name": "html_url",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['followers_url']"
+								},
+								"sink": {
+									"name": "followers_url",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['following_url']"
+								},
+								"sink": {
+									"name": "following_url",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['gists_url']"
+								},
+								"sink": {
+									"name": "gists_url",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['starred_url']"
+								},
+								"sink": {
+									"name": "starred_url",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['subscriptions_url']"
+								},
+								"sink": {
+									"name": "subscriptions_url",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['organizations_url']"
+								},
+								"sink": {
+									"name": "organizations_url",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['repos_url']"
+								},
+								"sink": {
+									"name": "repos_url",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['events_url']"
+								},
+								"sink": {
+									"name": "events_url",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['received_events_url']"
+								},
+								"sink": {
+									"name": "received_events_url",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['type']"
+								},
+								"sink": {
+									"name": "type",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['site_admin']"
+								},
+								"sink": {
+									"name": "site_admin",
+									"type": "Boolean"
+								}
+							},
+							{
+								"source": {
+									"path": "$['name']"
+								},
+								"sink": {
+									"name": "name",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['company']"
+								},
+								"sink": {
+									"name": "company",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['blog']"
+								},
+								"sink": {
+									"name": "blog",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['location']"
+								},
+								"sink": {
+									"name": "location",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['email']"
+								},
+								"sink": {
+									"name": "email",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['hireable']"
+								},
+								"sink": {
+									"name": "hireable",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['bio']"
+								},
+								"sink": {
+									"name": "bio",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['twitter_username']"
+								},
+								"sink": {
+									"name": "twitter_username",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['public_repos']"
+								},
+								"sink": {
+									"name": "public_repos",
+									"type": "Int64"
+								}
+							},
+							{
+								"source": {
+									"path": "$['public_gists']"
+								},
+								"sink": {
+									"name": "public_gists",
+									"type": "Int64"
+								}
+							},
+							{
+								"source": {
+									"path": "$['followers']"
+								},
+								"sink": {
+									"name": "followers",
+									"type": "Int64"
+								}
+							},
+							{
+								"source": {
+									"path": "$['following']"
+								},
+								"sink": {
+									"name": "following",
+									"type": "Int64"
+								}
+							},
+							{
+								"source": {
+									"path": "$['created_at']"
+								},
+								"sink": {
+									"name": "created_at",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['updated_at']"
+								},
+								"sink": {
+									"name": "updated_at",
+									"type": "String"
+								}
+							}
+						]
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "RestResource1",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DS_AZSQL",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"folder": {
+			"name": "API/GitHUB"
+		},
+		"annotations": []
+	}
+}
