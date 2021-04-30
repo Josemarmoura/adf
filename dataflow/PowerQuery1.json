@@ -13,7 +13,8 @@
 					}
 				}
 			],
-			"sinks": []
+			"sinks": [],
+			"script": "section Section1;\r\nshared DS_ADLSGEN2_DELIMITED = let\r\n  AdfDoc = AzureStorage.DataLakeContents(\"https://sanjosemar.dfs.core.windows.net/curated/HR/SAIDA/10000 Records.csv\"),\r\n  Csv = Csv.Document(AdfDoc, [Delimiter = \",\", Encoding = TextEncoding.Utf8, QuoteStyle = QuoteStyle.Csv]),\r\n  PromotedHeaders = Table.PromoteHeaders(Csv, [PromoteAllScalars = true])\r\nin\r\n  PromotedHeaders;\r\nshared UserQuery = let\r\n  Source = DS_ADLSGEN2_DELIMITED,\r\n  #\"Removed columns\" = Table.RemoveColumns(Source, {\"Password\"})\r\nin\r\n  #\"Removed columns\";\r\n"
 		}
 	}
 }

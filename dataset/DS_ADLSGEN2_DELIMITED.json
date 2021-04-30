@@ -10,8 +10,9 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "Hr5m.csv",
-				"fileSystem": "arquivos"
+				"fileName": "10000 Records.csv",
+				"folderPath": "HR/SAIDA",
+				"fileSystem": "curated"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
