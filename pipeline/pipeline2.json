@@ -20,7 +20,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"Container": "arquivos",
-							"Directry": "rh"
+							"Directry": "HR"
 						}
 					},
 					"fieldList": [
@@ -28,6 +28,7 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
