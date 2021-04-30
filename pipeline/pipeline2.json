@@ -186,7 +186,7 @@
 		"parameters": {
 			"SchemaDBO": {
 				"type": "string",
-				"defaultValue": "dbo"
+				"defaultValue": "dbo."
 			},
 			"TableRH": {
 				"type": "string",
