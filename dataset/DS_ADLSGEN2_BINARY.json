@@ -1,5 +1,5 @@
 {
-	"name": "Binary1",
+	"name": "DS_ADLSGEN2_BINARY",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_ADLS_GEN2",
@@ -18,7 +18,7 @@
 				"fileSystem": "arquivos"
 			},
 			"compression": {
-				"type": "deflate",
+				"type": "ZipDeflate",
 				"level": "Fastest"
 			}
 		}
