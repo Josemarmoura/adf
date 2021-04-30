@@ -74,7 +74,7 @@
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "git"
+			"table": "teste123json"
 		}
 	}
 }
