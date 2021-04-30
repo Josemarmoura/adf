@@ -16,10 +16,16 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "RestSource",
-						"httpRequestTimeout": "00:01:40",
-						"requestInterval": "00.00:00:00.010",
-						"requestMethod": "GET"
+						"type": "JsonSource",
+						"storeSettings": {
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true,
+							"wildcardFileName": "*.json",
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "JsonReadSettings"
+						}
 					},
 					"sink": {
 						"type": "AzureSqlSink"
@@ -321,8 +327,12 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "RestResource1",
-						"type": "DatasetReference"
+						"referenceName": "DS_Json",
+						"type": "DatasetReference",
+						"parameters": {
+							"Container": "raw",
+							"Directry": "Academy"
+						}
 					}
 				],
 				"outputs": [
