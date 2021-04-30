@@ -178,6 +178,16 @@
 				}
 			}
 		],
+		"parameters": {
+			"SchemaDBO": {
+				"type": "string",
+				"defaultValue": "dbo"
+			},
+			"TableRH": {
+				"type": "string",
+				"defaultValue": "tabelaRH"
+			}
+		},
 		"folder": {
 			"name": "Avanade"
 		},
